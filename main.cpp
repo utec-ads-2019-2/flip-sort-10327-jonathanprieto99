@@ -37,6 +37,7 @@ void printarray(int input[], int n){
 void ordenar(int input[], int n, int &operaciones){
     int  j;
     int i;
+    operaciones=0;
     for (i=0; i<n-1 ; i++) {
         for (j=0; j<n-i-1 ; j++){
             int valor1=input[j];
@@ -56,7 +57,7 @@ int main() {
 
     //cout << "Ingresar la longitud del array a crear: ";
     //generar(input,n);
-
+int contador=0;
     while (cin >>n && n<=1000){
         for (int i = 0; i !=n ; ++i) {
          cin>>input[i];
@@ -68,6 +69,6 @@ int main() {
 
         //printarray(input,n);
 
-        cout<<"Minimum exchange operations : "<<*operaciones;
+        cout<<"\n"<<"Minimum exchange operations : "<<*operaciones<<"\n";
     }
 }
