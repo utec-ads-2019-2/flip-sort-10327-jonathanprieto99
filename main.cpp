@@ -57,7 +57,6 @@ int main() {
 
     //cout << "Ingresar la longitud del array a crear: ";
     //generar(input,n);
-int contador=0;
     while (cin >>n && n<=1000){
         for (int i = 0; i !=n ; ++i) {
          cin>>input[i];
